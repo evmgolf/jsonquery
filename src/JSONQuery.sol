@@ -38,7 +38,7 @@ contract JSONExecutor {
       query.quote("'"),
       " ",
       filename,
-      "|xxd -p)"
+      "|xxd -p|tr -d '\n')"
     ));
   }
 
